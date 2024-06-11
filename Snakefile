@@ -4,7 +4,6 @@ from glob import glob
 
 types = ["ins", "outs", "taps"]
 stations = [os.path.basename(x).split(".")[0] for x in glob("data/tfl_daily/ins/raw/*.json")]
-years = [2019, 2020, 2021]
 
 rule all:
     input: 
